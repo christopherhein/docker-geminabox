@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gem in a Box</title>
+    <link rel="stylesheet" href="<%= url "#{ENV['GEMINABOX_CONTEXT']}/master.css", false %>" type="text/css" media="screen">
+    <link href="<%= url "/atom.xml", false %>" type="application/atom+xml" rel="alternate" title="Atom Feed">
+  </head>
+  <body>
+    <div id="content">
+      <h1>Gem in a Box</h1>
+      <%= yield %>
+    </div>
+    <script type="text/javascript" src="<%= url "#{ENV['GEMINABOX_CONTEXT']}/jquery.js", false %>"></script>
+    <script type="text/javascript" src="<%= url "#{ENV['GEMINABOX_CONTEXT']}/master.js", false %>"></script>
+  </body>
+</html>
